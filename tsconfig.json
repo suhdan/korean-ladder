@@ -1,4 +1,5 @@
 {
+  "baseUrl": ".",
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
@@ -18,5 +19,8 @@
     "jsxImportSource": "preact"
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "paths": {
+    "@app": ["src/*"]
+  }
 }
